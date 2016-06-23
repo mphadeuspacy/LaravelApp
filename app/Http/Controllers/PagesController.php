@@ -12,6 +12,6 @@ class PagesController extends Controller
     {
         $lessons = ['first lesson', 'second lesson', 'third lesson'];
 
-        return view('pages.index',  compact('lessons'));
+        return view('pages.index')->with('lessons', $lessons);
     }
 }

@@ -12,8 +12,6 @@ class PagesController extends Controller
     {
         $lessons = ['first lesson', 'second lesson', 'third lesson'];
 
-        $name = "Mpha Kheswa";
-
-        return view('pages.index', ['name' => $name], ['lessons' => $lessons] );
+        return view('pages.index',  compact('lessons'));
     }
 }

@@ -106,7 +106,7 @@
     <Compile Include="resources\lang\en\passwords.php" />
     <Compile Include="resources\lang\en\validation.php" />
     <Compile Include="resources\views\errors\503.blade.php" />
-    <Compile Include="resources\views\pages\home.blade.php" />
+    <Compile Include="resources\views\pages\index.blade.php" />
     <Compile Include="resources\views\vendor\.gitkeep" />
     <Compile Include="resources\views\hello.php" />
     <Compile Include="resources\views\master.blade.php" />

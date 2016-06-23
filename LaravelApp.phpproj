@@ -27,6 +27,7 @@
     <Compile Include="app\Http\Controllers\Controller.php" />
     <Compile Include="app\Http\Controllers\HomeController.php" />
     <Compile Include="app\Http\Controllers\PagesController.php" />
+    <Compile Include="app\Http\Controllers\SongsController.php" />
     <Compile Include="app\Http\Middleware\Authenticate.php" />
     <Compile Include="app\Http\Middleware\EncryptCookies.php" />
     <Compile Include="app\Http\Middleware\RedirectIfAuthenticated.php" />
@@ -107,6 +108,8 @@
     <Compile Include="resources\lang\en\validation.php" />
     <Compile Include="resources\views\errors\503.blade.php" />
     <Compile Include="resources\views\pages\index.blade.php" />
+    <Compile Include="resources\views\songs\index.blade.php" />
+    <Compile Include="resources\views\songs\show.blade.php" />
     <Compile Include="resources\views\vendor\.gitkeep" />
     <Compile Include="resources\views\hello.php" />
     <Compile Include="resources\views\master.blade.php" />
@@ -171,6 +174,7 @@
     <Folder Include="resources\lang\en" />
     <Folder Include="resources\lang" />
     <Folder Include="resources\views\errors" />
+    <Folder Include="resources\views\songs\" />
     <Folder Include="resources\views\pages\" />
     <Folder Include="resources\views\vendor" />
     <Folder Include="resources\views" />

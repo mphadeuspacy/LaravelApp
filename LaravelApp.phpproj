@@ -26,6 +26,7 @@
     <Compile Include="app\Http\Controllers\Auth\PasswordController.php" />
     <Compile Include="app\Http\Controllers\Controller.php" />
     <Compile Include="app\Http\Controllers\HomeController.php" />
+    <Compile Include="app\Http\Controllers\PagesController.php" />
     <Compile Include="app\Http\Middleware\Authenticate.php" />
     <Compile Include="app\Http\Middleware\EncryptCookies.php" />
     <Compile Include="app\Http\Middleware\RedirectIfAuthenticated.php" />
@@ -105,9 +106,10 @@
     <Compile Include="resources\lang\en\passwords.php" />
     <Compile Include="resources\lang\en\validation.php" />
     <Compile Include="resources\views\errors\503.blade.php" />
+    <Compile Include="resources\views\pages\home.blade.php" />
     <Compile Include="resources\views\vendor\.gitkeep" />
     <Compile Include="resources\views\hello.php" />
-    <Compile Include="resources\views\welcome.blade.php" />
+    <Compile Include="resources\views\master.blade.php" />
     <Compile Include="storage\app\public\.gitignore" />
     <Compile Include="storage\app\.gitignore" />
     <Compile Include="storage\framework\cache\.gitignore" />
@@ -163,11 +165,13 @@
     <Folder Include="Homestead\src" />
     <Folder Include="Homestead" />
     <Folder Include="public" />
+    <Folder Include="public\css\" />
     <Folder Include="resources\assets\sass" />
     <Folder Include="resources\assets" />
     <Folder Include="resources\lang\en" />
     <Folder Include="resources\lang" />
     <Folder Include="resources\views\errors" />
+    <Folder Include="resources\views\pages\" />
     <Folder Include="resources\views\vendor" />
     <Folder Include="resources\views" />
     <Folder Include="resources" />
@@ -180,5 +184,8 @@
     <Folder Include="storage\logs" />
     <Folder Include="storage" />
     <Folder Include="tests" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\css\style.css" />
   </ItemGroup>
 </Project>

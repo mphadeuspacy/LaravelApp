@@ -6,24 +6,21 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+use DB;
+
 class SongsController extends Controller
 {
     public function index()
     {
-        $songs = $this->getSongs();
+        $songs = DB::table('songs')->get();
 
         return view('songs.index', compact('songs'));
     }
 
     public function show($id)
     {
-        $song = $this->getSongs()[$id]; 
+        $song = DB::table('songs')->find($id); 
 
         return view('songs.show', compact('song'));
-    }
-
-    private function getSongs()
-    {
-        return ['Boyfriend', 'Be all right', 'Fall'];
     }
 }

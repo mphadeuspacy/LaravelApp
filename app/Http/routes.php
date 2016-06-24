@@ -11,10 +11,6 @@
 |
 */
 
-Route::get('/', 'HomeController@index');
-
-Route::get('pages', 'PagesController@index');
-
-Route::get('songs', 'SongsController@index');
+Route::get('/', 'SongsController@index');
 
 Route::get('songs/{id}', 'SongsController@show');
